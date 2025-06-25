@@ -21,5 +21,13 @@ pipeline {
 		sh 'ls -l'
     }
 }
+stage('replaced default page'){
+steps {
+sh
+'''
+cd 25_june && cp index.html /var/www/html/index.html
+sudo systemclt restart apache2
+
+'''
 }
 }
