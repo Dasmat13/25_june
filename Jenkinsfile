@@ -16,8 +16,10 @@ pipeline {
                 '''
             }
         }
-	stage ('creating a file')
+	stage ('creating a file'){
 	    steps{
 		sh 'ls -l'
     }
+}
+}
 }
