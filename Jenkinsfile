@@ -7,7 +7,7 @@ pipeline {
                 checkout scm
             }
         }
-        stage('creating a file ') {
+        stage('installing a apache') {
             steps {
                 sh '''
                     sudo apt install -y apache2
@@ -16,5 +16,8 @@ pipeline {
                 '''
             }
         }
+	stage ('creating a file')
+	    steps{
+		sh 'ls -l'
     }
 }
