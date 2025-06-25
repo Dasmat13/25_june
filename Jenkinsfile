@@ -24,6 +24,7 @@ pipeline {
 stage('replaced default page'){
 steps {
 sh'''
+ls -l
 cd 25_june && cp index.html /var/www/html/index.html
 sudo systemctl restart apache2
 
