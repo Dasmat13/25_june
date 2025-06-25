@@ -23,8 +23,7 @@ pipeline {
 }
 stage('replaced default page'){
 steps {
-sh
-'''
+sh'''
 cd 25_june && cp index.html /var/www/html/index.html
 sudo systemclt restart apache2
 
