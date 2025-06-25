@@ -2,46 +2,62 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>CI/CD Test Deployment</title>
+  <title>Hello Dasmat!</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
-    body {
+    * {
       margin: 0;
       padding: 0;
-      font-family: 'Segoe UI', sans-serif;
+      box-sizing: border-box;
+    }
+
+    body {
+      height: 100vh;
+      background: linear-gradient(135deg, #1f4037, #99f2c8);
       display: flex;
       justify-content: center;
       align-items: center;
-      height: 100vh;
-      background: linear-gradient(to right, #1d976c, #93f9b9);
+      font-family: 'Segoe UI', sans-serif;
       color: #fff;
     }
-    .box {
-      background-color: rgba(0, 0, 0, 0.3);
-      padding: 40px 60px;
-      border-radius: 12px;
+
+    .card {
       text-align: center;
-      box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+      padding: 40px 60px;
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 20px;
+      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+      backdrop-filter: blur(10px);
+      animation: fadeIn 1.5s ease-out;
     }
+
     h1 {
-      font-size: 2.5rem;
+      font-size: 3.5em;
       margin-bottom: 10px;
+      color: #ffffff;
     }
+
     p {
-      font-size: 1.2rem;
-    }
-    .version {
-      margin-top: 20px;
-      font-size: 0.9rem;
+      font-size: 1.3em;
       color: #e0ffe0;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(-30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
     }
   </style>
 </head>
 <body>
-  <div class="box">
-    <h1>✅ Deployment Successful</h1>
-    <p>This page was deployed via CI/CD pipeline.</p>
-    <div class="version">Build Version: v1.0.0 | Last Updated: <script>document.write(new Date().toLocaleString());</script></div>
+  <div class="card">
+    <h1>Hello, I'm Dasmat 👋</h1>
+    <p>Welcome to my beautiful page powered by HTML & CSS.</p>
   </div>
 </body>
 </html>
