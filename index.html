@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CI/CD Test Deployment</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background: linear-gradient(to right, #1d976c, #93f9b9);
+      color: #fff;
+    }
+    .box {
+      background-color: rgba(0, 0, 0, 0.3);
+      padding: 40px 60px;
+      border-radius: 12px;
+      text-align: center;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    }
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+    p {
+      font-size: 1.2rem;
+    }
+    .version {
+      margin-top: 20px;
+      font-size: 0.9rem;
+      color: #e0ffe0;
+    }
+  </style>
+</head>
+<body>
+  <div class="box">
+    <h1>✅ Deployment Successful</h1>
+    <p>This page was deployed via CI/CD pipeline.</p>
+    <div class="version">Build Version: v1.0.0 | Last Updated: <script>document.write(new Date().toLocaleString());</script></div>
+  </div>
+</body>
+</html>
